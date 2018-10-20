@@ -10,17 +10,17 @@
  <button ion-button full success (click)="tabs()">  les catégories </button>
 
  <ion-grid>
-   <ion-row style="border: 2px solid">
-     <ion-col style="border:2px solid green">
-      <div ><button  class="home_but" ion-button > Stuhhff</button>  </div>
+   <ion-row >
+     <ion-col >
+      <div ><button  class="home_but" ion-button (click)="cam()"> Camera</button>  </div>
      </ion-col>
      <ion-col>
-      <div ><button  class="home_but" ion-button > Stuff</button>  </div>
+      <div ><button  class="home_but" ion-button (click)="geo()" > Geo</button>  </div>
      </ion-col>
     
    </ion-row>
-   <ion-row style="border: 2px solid">
-    <ion-col style="border:2px solid green">
+   <ion-row >
+    <ion-col >
      <div ><button  class="home_but" ion-button > Stuhhff</button>  </div>
     </ion-col>
     <ion-col>
@@ -30,4 +30,20 @@
   </ion-row>
   
  </ion-grid>
+
+ <ul>
+   <li>
+    <p> longitude : {{long}} </p>
+   </li>
+   <li>
+    <p> lat : {{lat}} </p>
+   </li>
+ </ul>
+
+
+ <ion-card>
+   <ion-card-content>
+     <p><img [src]="photo" alt=""></p>
+   </ion-card-content>
+ </ion-card>
 </ion-content>
