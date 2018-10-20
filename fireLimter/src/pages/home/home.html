@@ -1,14 +1,33 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Acceuil
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ <button ion-button full success (click)="tabs()">  les catégories </button>
+
+ <ion-grid>
+   <ion-row style="border: 2px solid">
+     <ion-col style="border:2px solid green">
+      <div ><button  class="home_but" ion-button > Stuhhff</button>  </div>
+     </ion-col>
+     <ion-col>
+      <div ><button  class="home_but" ion-button > Stuff</button>  </div>
+     </ion-col>
+    
+   </ion-row>
+   <ion-row style="border: 2px solid">
+    <ion-col style="border:2px solid green">
+     <div ><button  class="home_but" ion-button > Stuhhff</button>  </div>
+    </ion-col>
+    <ion-col>
+     <div ><button  class="home_but" ion-button > Stuff</button>  </div>
+    </ion-col>
+   
+  </ion-row>
+  
+ </ion-grid>
 </ion-content>
