@@ -1,0 +1,7 @@
+{
+  "name": "fireLimter",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
