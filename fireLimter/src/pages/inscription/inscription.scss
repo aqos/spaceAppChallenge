@@ -1,0 +1,86 @@
+page-inscription {
+
+    ion-icon
+    {
+        color: rgb(228, 31, 31);
+
+    }
+    .r
+    {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 75%;
+        border-right: 25px;
+        border: 1px solid rgb(228, 31, 31);
+        text-align: center;
+        padding-top: 12px;
+        font-size: 20px;
+    }
+.face
+{
+    border-color: rgb(67, 31, 228);
+    ion-icon
+    {
+     color: rgb(67, 31, 228) !important;
+    }
+}
+.go
+{
+    border-color: rgb(228, 31, 31);
+    ion-icon
+    {
+     color: rgb(228, 31, 31) !important;
+    }
+}
+.tw
+{
+    border-color: rgb(58, 132, 230);
+    ion-icon
+    {
+     color: rgb(58, 132, 230) !important;
+    }
+}
+    .reso
+    {
+       //border: 1px solid;
+       text-align: center;
+       margin-top: 30px;
+    }
+
+    .list
+    {
+        margin-top: 100px;
+    }
+
+    .but_ins
+    {
+        display: block;
+        background-color: rgb(228, 31, 31);
+        color: #ffffff;
+        width: 75%;
+        margin: auto;
+
+    }
+    .tile
+    {
+        color: rgb(228, 31, 31);
+        text-align: center;
+        font-size: 25px;
+    }
+    .bouts
+    {
+        width: 95%;
+        // position: absolute;
+        // bottom: 25px;
+        //border: 1px solid;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    span ion-icon
+    {
+        //color: black;
+    }
+
+}

@@ -1,0 +1,26 @@
+<!--
+  Generated template for the LameteoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>lameteo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div *ngIf="state">
+    <img src="{{weatherData.icon}}"/>
+    <label>{{weatherData.main}}</label>
+    <div>Ville : {{weatherData.city}}</div>
+    <div>Conditions courantes : {{weatherData.description}}</div>
+    <div>{{weatherData.temp}} °C</div>
+</div>
+
+</ion-content>

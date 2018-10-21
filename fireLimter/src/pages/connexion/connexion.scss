@@ -1,0 +1,40 @@
+page-connexion {
+    ion-content
+    {
+        background-color: beige;
+    }
+    ion-input
+    {
+        border: 1px solid rgba(241, 12, 12, 0.288);
+        margin-bottom: 12px;
+    }
+    .list
+    {
+        margin-top: 70px;
+    }
+
+    .but_ins
+    {
+        display: block;
+        background-color: rgb(228, 31, 31);
+        color: #ffffff;
+        width: 75%;
+        margin: auto;
+
+    }
+    .tile
+    {
+        color: rgb(228, 31, 31);
+        text-align: center;
+        font-size: 25px;
+    }
+    .bouts
+    {
+        width: 95%;
+        // position: absolute;
+        // bottom: 25px;
+        //border: 1px solid;
+        margin: auto;
+    }
+
+}

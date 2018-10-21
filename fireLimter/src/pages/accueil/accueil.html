@@ -1,0 +1,67 @@
+<!--
+  Generated template for the AccueilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>accueil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="content2">
+
+  <div class="bout_alert">
+
+
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="_iconf " (click)="alerte()">
+          <ion-icon class="flamme" name="warning"></ion-icon>
+        </div>
+       <div class="title_flamme">Lancer une alerte</div> <br> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div>
+  <div class="=other_bouts">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="_icon" (click)="liste_alert()">
+            <ion-icon name="list"></ion-icon>
+          </div>
+          Diverses alertes <br> 
+        </ion-col>
+        <ion-col>
+          <div class="_icon" (click)="metheo()">
+            <ion-icon name="cloudy"></ion-icon><!-- <img class="_img_ico" src="assets/icon/bar-chart (2).png" alt=""> -->
+          </div>
+          Météo
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <!-- <div class="_icon"><ion-icon name="gift"></ion-icon></div> uniquement avce ionic4-->
+          <div class="_icon" (click)="info()">
+            <ion-icon name="information"></ion-icon><!-- <img class="_img_ico" src="assets/icon/bar-chart (2).png" alt=""> -->
+          </div>
+          Bon à savoir
+        </ion-col>
+        <ion-col>
+          <div class="_icon" (click)="conf()">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          Paramètres
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,58 @@
+page-welcome {
+    .logo
+    {
+        margin-top: 200px;
+        widows: 75%;
+        //border: 1px solid;
+    }
+    .image
+    {
+        width: 75%;
+        margin: auto;
+    }
+    .title
+    {
+        color: rgb(228, 31, 31);
+        text-align: center;
+        font-size: 35px;
+    }
+    .but_log
+    {
+        width: 95%;
+        height: 45px;;
+        color: black;
+        margin: auto;
+        margin-bottom: 12px;
+        border-radius: 7px;
+        
+    }
+    
+    .but_con
+    {
+        background-color: rgba(0,0,0,0);
+        color:rgb(228, 31, 31);
+        border: 2px solid rgb(228, 31, 31);
+    }
+    .but_ins
+    {
+        background-color: rgb(228, 31, 31);
+        color: #ffffff;
+    }
+    .bouts
+    {
+        width: 95%;
+        position: absolute;
+        bottom: 25px;
+        //border: 1px solid;
+        margin: auto;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .content
+    {
+        background-color: rgb(255, 255, 255);
+    }
+
+}

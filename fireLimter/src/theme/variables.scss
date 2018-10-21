@@ -36,7 +36,7 @@ $app-direction: ltr;
 $colors: (
   primary:    #488aff,
   secondary:  #32db64,
-  danger:     #f53d3d,
+  danger:     rgb(228, 31, 31),
   light:      #f4f4f4,
   dark:       #222
 );
@@ -56,6 +56,9 @@ $colors: (
 $tabs-md-tab-text-color : red;
 $tabs-md-tab-icon-color	:red;
 
+$text-input-md-show-focus-highlight	: false;
+$text-input-md-highlight-color	:rgba(228, 31, 31, 0);
+$text-input-placeholder-color	:rgb(228, 31, 31);
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
