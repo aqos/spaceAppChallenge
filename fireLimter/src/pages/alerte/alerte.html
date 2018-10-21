@@ -19,9 +19,21 @@
   <div class="cam" (click)="cam()">
     <ion-icon name="camera" ></ion-icon>
   </div>
-  <p class="" >messagedd</p>
+  <div class="_img">
+      <img [src]="chosenPicture" alt="photo">
+  </div>
+  <p class="" >Desciption</p>
 
-  <div class="bouts">
-      <button ion-button class="but_ins but_log" (click)="sign()"> Sign in</button> </div>
-  
+  <div ><ion-textarea  id="mess" class="input_comment" type="text" [(ngModel)]="message" placeholder="Description de la situation"></ion-textarea> 
+</div>
+
+<ion-item>
+    <ion-label><marquee scrollamount="5"> Je certifie véridique les informations renseignées </marquee></ion-label>
+    <ion-checkbox [(ngModel)]="cert"></ion-checkbox>
+  </ion-item>
+  <div class="bouts" *ngIf="cert">
+      <button ion-button class="but_ins but_log" (click)="send()"> Envoyé</button> </div>
+      <div class="bouts" *ngIf="!cert">
+          <button ion-button class="but_ins but_log" disabled="true" (click)="send()"> Envoyé</button> </div>
+      
 </ion-content>

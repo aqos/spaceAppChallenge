@@ -25,4 +25,28 @@ page-alerte {
         text-align: center;
         font-size: 35px;
     }
+
+    ion-input, .input_comment
+    {
+        border: 2px solid rgba(90, 87, 87, 0.582);
+        border-radius: 5px;  
+    }
+#mess
+{
+    margin-bottom: 15px;
+}
+    .input_comment
+    {
+        display: block;
+        //width: 100%;
+        //height: 100px;
+        margin: auto;
+        padding-inline-end: 5px;
+        
+
+    }
+    ._img
+    {
+        text-align: center;
+    }
 }

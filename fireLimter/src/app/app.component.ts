@@ -10,6 +10,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { AccueilPage } from '../pages/accueil/accueil';
 import { ListAlertePage } from '../pages/list-alerte/list-alerte';
 import { InfoPage } from '../pages/info/info';
+import { LameteoPage } from '../pages/lameteo/lameteo';
 @Component({
   templateUrl: 'app.html'
 })
@@ -22,6 +23,16 @@ export class MyApp {
     icon: string,
     isgain: boolean
   } > ;
+
+  liste_alerte:Array < {
+    photo:any,
+    message:any
+    date:any
+  }> ;
+
+
+
+
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
 
 

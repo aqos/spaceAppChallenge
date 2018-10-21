@@ -1,0 +1,24 @@
+page-info-alerte {
+
+    .bout_alert
+    {
+        //background-image: url('../../assets/icen.jpg');
+        background-size: cover;
+        background-color: rgba(0,0,0,0.5);
+
+    }
+    ._title
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+    ._date
+    {
+        text-align: center;
+    }
+    ._message
+    {
+        margin: 12px;
+    }
+}
+

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>lameteo</ion-title>
+    <ion-title>Météo</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,12 +15,46 @@
 
 <ion-content padding>
 
-  <div *ngIf="state">
-    <img src="{{weatherData.icon}}"/>
+  <div>
+      <div>
+          <ion-grid>
+              <ion-row>
+                <ion-col col-lg-9>
+                    <ion-input type="text" placeholder="Ville e.g cotonou" [(ngModel)]="ville"></ion-input>
+
+                </ion-col>
+                <ion-col col-lg-3>
+                  <button ion-button (click)="getMeteo()" > <ion-icon name="search"></ion-icon> </button>
+                  </ion-col>
+              </ion-row>
+            </ion-grid>
+        </div>
+        <button class="button icon ion-search" ></button>
+  </div>
+  <div *ngIf="!state" >
+    <p>
+      Aucune information
+    </p>
+  </div>
+  <div *ngIf="state" >
+    
+
+    
+
+      <ion-card>
+<ion-card-content>
+    <img src="{{weatherData.icon}}" alt="">
     <label>{{weatherData.main}}</label>
     <div>Ville : {{weatherData.city}}</div>
     <div>Conditions courantes : {{weatherData.description}}</div>
-    <div>{{weatherData.temp}} °C</div>
+    <div>Température : {{weatherData.temp}} °C</div>
+    <div>humidity :{{weatherData.humidity}}</div>
+        <div>pressure :{{ weatherData.pressure}}</div>
+            <div>orientation du vent :{{weatherData.vent.deg}}</div>
+                <div>vitesse du vent :{{ weatherData.vent.speed}}</div>
+
+              </ion-card-content>
+   </ion-card>
 </div>
 
 </ion-content>

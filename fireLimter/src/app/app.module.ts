@@ -21,6 +21,9 @@ import { LameteoPage } from '../pages/lameteo/lameteo';
 import { AlertePage } from '../pages/alerte/alerte';
 import { ListAlertePage } from '../pages/list-alerte/list-alerte';
 import { InfoPage } from '../pages/info/info';
+import { CameraProvider } from '../providers/camera/camera';
+import { AccueilPageModule } from '../pages/accueil/accueil.module';
+import { InfoAlertePage } from '../pages/info-alerte/info-alerte';
 
 
 
@@ -36,7 +39,9 @@ import { InfoPage } from '../pages/info/info';
     LameteoPage,
     AlertePage,
     ListAlertePage,
-    InfoPage
+    InfoPage,
+    InfoAlertePage
+    
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,8 @@ import { InfoPage } from '../pages/info/info';
     LameteoPage,
     AlertePage,
     ListAlertePage,
-    InfoPage
+    InfoPage,
+    InfoAlertePage
 
   ],
   providers: [
@@ -64,7 +70,8 @@ import { InfoPage } from '../pages/info/info';
     Camera,
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MetheoProvider
+    MetheoProvider,
+    CameraProvider
   ]
 })
 export class AppModule {}

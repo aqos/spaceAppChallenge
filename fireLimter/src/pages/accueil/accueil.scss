@@ -15,6 +15,7 @@ page-accueil {
     .title_flamme
     {
         color: white !important;
+        text-shadow: 2px 2px 2px black; 
     }
     ._iconf
     {
@@ -65,5 +66,8 @@ page-accueil {
     .bout_alert
     {
         background-image: url('../../assets/icen.jpg');
+        background-size: cover;
+        background-color: rgba(0,0,0,0.5);
+
     }
 }
